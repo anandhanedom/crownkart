@@ -21,12 +21,6 @@ const shopReducer = (state = INITIAL_STATE, action) => {
         collections: action.payload,
       };
 
-    case ShopActionTypes.UPDATE_COLLECTIONS:
-      return {
-        ...state,
-        collections: action.payload,
-      };
-
     case ShopActionTypes.FETCH_COLLECTIONS_FAILURE:
       return {
         ...state,
